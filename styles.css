@@ -8,7 +8,8 @@ html, body {
     box-sizing: border-box;
     font-family: 'Fira Code', monospace;
     background: #282c34; 
-    color: #abb2bf; /* Color de texto */
+    color: #abb2bf; 
+}
 
 .container {
     display: grid;
@@ -38,7 +39,7 @@ html, body {
     position: relative;
 }
 
-/* Barra superior estilo Carbon */
+/* Estilo Carbon */
 .card::before {
     content: "● ● ●";
     font-size: 10px;
@@ -49,19 +50,12 @@ html, body {
     left: 15px;
 }
 
-/* Estilo del código dentro del card */
 pre {
     background: none;
     padding: 10px;
     border-radius: 5px;
     overflow-x: auto;
 }
-
-/* Colores del código (simulación de sintaxis) */
-.keyword { color: #c678dd; }   /* Morado */
-.function { color: #61afef; }  /* Azul */
-.string { color: #98c379; }    /* Verde */
-.comment { color: #5c6370; }   /* Gris */
 
 textarea {
     width: 100%;
@@ -109,4 +103,13 @@ h3{
     border-radius: 5px;
     color:rgb(229, 233, 0);
     width: 50%;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(16, 21, 30, 0.4);
+    color: #abb2bf;
+    border: 1px solid #abb2bf;
 }
