@@ -9,9 +9,8 @@ html, body {
     font-family: 'Fira Code', monospace;
     color: #abb2bf; 
     background-color: black;
-    overflow-x: hidden;
-    overflow-y: auto;
 }
+
 
 /* background effect */
 .light {
@@ -20,7 +19,8 @@ html, body {
     height: 200px;
     background: radial-gradient(circle, rgba(255, 0, 150, 0.8), rgba(255, 0, 170, 0) 60%);
     border-radius: 50%;
-    filter: blur(50px);
+    filter: blur(70px);
+    pointer-events: none; 
     animation: moveLight 4s infinite alternate ease-in-out, fadeLight 2s infinite alternate ease-in-out;
 }
 
@@ -29,7 +29,7 @@ html, body {
         transform: translate(5vw, 10vh);
     }
     to {
-        transform: translate(100vw, 100vh);
+        transform: translate(60vw, 100vh);
     }
 }
 
