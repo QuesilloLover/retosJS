@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retos JS | Programación web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="header">
+            <h1>Retos de programación</h1>
+            <p>En este página se presentan 10 retos de programación en JavaScript. Cada reto tiene un enunciado y un
+                espacio para mostrar el código que resuelva el problema.</p>
+        </div>
+        <div id="retos" class="flex-center">
+            <div id="reto1" class="card">
+                <div class="info">
+                    <h2>Reto 1</h2>
+                    <p>Crea un programa que solicite el nombre del usuario mediante prompt() y luego muestre un mensaje
+                        de
+                        saludo.</p>
+                </div>
+                <div class="code_area">
+                    <div class="code_input">
+                        <textarea disabled id="code1" class="code" rows="10" cols="50"></textarea>
+                        <button onclick="saludo()" class="btn">Ejecutar</button>
+                    </div>
+                    <div class="code_output">
+                        <h3>Salida</h3>
+                        <div class="flex-center">
+                            <p id="output1" class="text_output"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="reto2" class="card">
+                <div class="info">
+                    <h2>Reto 2</h2>
+                    <p>Escribe una función que convierta grados Celsius a Fahrenheit usando la fórmula:
+                        F = (C × 9/5) + 32</p>
+                </div>
+                <div class="code_area">
+                    <div class="code_input">
+                        <textarea disabled id="code1" class="code" rows="10" cols="50"></textarea>
+                        <button onclick="runCode(1)" class="btn">Ejecutar</button>
+                    </div>
+                    <div class="code_output">
+                        <h3>Salida</h3>
+                        <p id="output2"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="reto3" class="card">
+                <div class="info">
+                    <h2>Reto 3</h2>
+                    <p>Solicita un número al usuario y determina si es par o impar.</p>
+                </div>
+                <div class="code_area">
+                    <div class="code_input">
+                        <textarea disabled id="code1" class="code" rows="10" cols="50"></textarea>
+                        <button onclick="runCode(1)" class="btn">Ejecutar</button>
+                    </div>
+                    <div class="code_output">
+                        <h3>Salida</h3>
+                        <p id="output3"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="reto4" class="card">
+                <div class="info">
+                    <h2>Reto 4</h2>
+                    <p>Escribe un programa que pida una palabra y muestre cuántos caracteres tiene.</p>
+                </div>
+                <div class="code_area">
+                    <div class="code_input">
+                        <textarea disabled id="code1" class="code" rows="10" cols="50"></textarea>
+                        <button onclick="runCode(1)" class="btn">Ejecutar</button>
+                    </div>
+                    <div class="code_output">
+                        <h3>Salida</h3>
+                        <p id="output4"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="reto5" class="card">
+                <div class="info">
+                    <h2>Reto 5</h2>
+                    <p>Pide una palabra al usuario y muestra la palabra invertida.</p>
+                </div>
+                <div class="code_area">
+                    <div class="code_input">
+                        <textarea disabled id="code1" class="code" rows="10" cols="50"></textarea>
+                        <button onclick="runCode(1)" class="btn">Ejecutar</button>
+                    </div>
+                    <div class="code_output">
+                        <h3>Salida</h3>
+                        <p id="output5"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="reto6" class="card">
+                <div class="info">
+                    <h2>Reto 6</h2>
+                    <p>Escribe un programa que pida un número N y sume todos los números desde 1 hasta N.</p>
+                </div>
+                <div class="code_area">
+                    <div class="code_input">
+                        <textarea disabled id="code1" class="code" rows="10" cols="50"></textarea>
+                        <button onclick="runCode(1)" class="btn">Ejecutar</button>
+                    </div>
+                    <div class="code_output">
+                        <h3>Salida</h3>
+                        <p id="output6"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="reto7" class="card">
+                <div class="info">
+                    <h2>Reto 7</h2>
+                    <p>Solicita una palabra y muestra el resultado en mayúsculas y en minúsculas.</p>
+                </div>
+                <div class="code_area">
+                    <div class="code_input">
+                        <textarea disabled id="code1" class="code" rows="10" cols="50"></textarea>
+                        <button onclick="runCode(1)" class="btn">Ejecutar</button>
+                    </div>
+                    <div class="code_output">
+                        <h3>Salida</h3>
+                        <p id="output7"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="reto8" class="card">
+                <div class="info">
+                    <h2>Reto 8</h2>
+                    <p>Crea un programa que genere un número aleatorio entre 1 y 100 y lo muestre en pantalla.</p>
+                </div>
+                <div class="code_area">
+                    <div class="code_input">
+                        <textarea disabled id="code1" class="code" rows="10" cols="50"></textarea>
+                        <button onclick="runCode(1)" class="btn">Ejecutar</button>
+                    </div>
+                    <div class="code_output">
+                        <h3>Salida</h3>
+                        <p id="output8"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="reto9" class="card">
+                <div class="info">
+                    <h2>Reto 9</h2>
+                    <p>Pide una palabra y determina si es un palíndromo (se lee igual al derecho y al revés).</p>
+                </div>
+                <div class="code_area">
+                    <div class="code_input">
+                        <textarea disabled id="code1" class="code" rows="10" cols="50"></textarea>
+                        <button onclick="runCode(1)" class="btn">Ejecutar</button>
+                    </div>
+                    <div class="code_output">
+                        <h3>Salida</h3>
+                        <p id="output9"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="reto10" class="card">
+                <div class="info">
+                    <h2>Reto 10</h2>
+                    <p>Solicita una palabra y muestra cuántas vocales tiene.</p>
+                </div>
+                <div class="code_area">
+                    <div class="code_input">
+                        <textarea disabled id="code1" class="code" rows="10" cols="50"></textarea>
+                        <button onclick="runCode(1)" class="btn">Ejecutar</button>
+                    </div>
+                    <div class="code_output">
+                        <h3>Salida</h3>
+                        <p id="output10"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
